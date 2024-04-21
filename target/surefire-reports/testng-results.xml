@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="8" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-04-22T02:06:41 IST" name="Surefire suite" finished-at="2024-04-22T02:06:45 IST" duration-ms="4312">
+    <groups>
+    </groups>
+    <test started-at="2024-04-22T02:06:41 IST" name="Surefire test" finished-at="2024-04-22T02:06:45 IST" duration-ms="4312">
+      <class name="com.rest.TestResponseStuff">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.rest.TestResponseStuff@59af0466]" started-at="2024-04-22T02:06:44 IST" name="setup" finished-at="2024-04-22T02:06:44 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="basictest()[pri:0, instance:com.rest.TestResponseStuff@59af0466]" started-at="2024-04-22T02:06:44 IST" name="basictest" finished-at="2024-04-22T02:06:45 IST" duration-ms="148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basictest -->
+      </class> <!-- com.rest.TestResponseStuff -->
+      <class name="com.rest.DataProviderTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.rest.DataProviderTest@61386958]" started-at="2024-04-22T02:06:41 IST" name="setup" finished-at="2024-04-22T02:06:41 IST" duration-ms="547" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="basicPost(java.lang.String,java.lang.String)[pri:0, instance:com.rest.DataProviderTest@61386958]" started-at="2024-04-22T02:06:41 IST" name="basicPost" data-provider="users" finished-at="2024-04-22T02:06:44 IST" duration-ms="3306" status="FAIL">
+          <exception class="org.testng.internal.reflect.MethodMatcherException">
+            <message>
+              <![CDATA[
+[void com.rest.DataProviderTest.basicPost(java.lang.String,java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: basicPost([java.lang.String arg0, java.lang.String arg1])
+Arguments: [(java.lang.String) jam]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
+[void com.rest.DataProviderTest.basicPost(java.lang.String,java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: basicPost([java.lang.String arg0, java.lang.String arg1])
+Arguments: [(java.lang.String) jam]
+at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:46)
+at org.testng.internal.Parameters.injectParameters(Parameters.java:909)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:37)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basicPost -->
+        <test-method signature="basicPost(java.lang.String,java.lang.String)[pri:0, instance:com.rest.DataProviderTest@61386958]" started-at="2024-04-22T02:06:41 IST" name="basicPost" data-provider="users" finished-at="2024-04-22T02:06:43 IST" duration-ms="1959" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sam]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[shop]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basicPost -->
+        <test-method signature="basicPost(java.lang.String,java.lang.String)[pri:0, instance:com.rest.DataProviderTest@61386958]" started-at="2024-04-22T02:06:43 IST" name="basicPost" data-provider="users" finished-at="2024-04-22T02:06:44 IST" duration-ms="488" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cam]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[cop]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basicPost -->
+        <test-method signature="basicPost(java.lang.String,java.lang.String)[pri:0, instance:com.rest.DataProviderTest@61386958]" started-at="2024-04-22T02:06:44 IST" name="basicPost" data-provider="users" finished-at="2024-04-22T02:06:44 IST" duration-ms="411" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[dam]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dop]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basicPost -->
+        <test-method signature="basicPost(java.lang.String,java.lang.String)[pri:0, instance:com.rest.DataProviderTest@61386958]" started-at="2024-04-22T02:06:44 IST" name="basicPost" data-provider="users" finished-at="2024-04-22T02:06:44 IST" duration-ms="427" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[fam]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[fap]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basicPost -->
+      </class> <!-- com.rest.DataProviderTest -->
+      <class name="com.rest.TestFirst">
+        <test-method signature="testFirst()[pri:0, instance:com.rest.TestFirst@65f095f8]" started-at="2024-04-22T02:06:44 IST" name="testFirst" finished-at="2024-04-22T02:06:44 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFirst -->
+      </class> <!-- com.rest.TestFirst -->
+      <class name="com.rest.TestResponseStuff3">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.rest.TestResponseStuff3@346d61be]" started-at="2024-04-22T02:06:45 IST" name="setup" finished-at="2024-04-22T02:06:45 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="basictest()[pri:0, instance:com.rest.TestResponseStuff3@346d61be]" started-at="2024-04-22T02:06:45 IST" name="basictest" finished-at="2024-04-22T02:06:45 IST" duration-ms="132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basictest -->
+      </class> <!-- com.rest.TestResponseStuff3 -->
+      <class name="com.rest.TestResponseStuff2">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.rest.TestResponseStuff2@3e6ef8ad]" started-at="2024-04-22T02:06:45 IST" name="setup" finished-at="2024-04-22T02:06:45 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="basictest()[pri:0, instance:com.rest.TestResponseStuff2@3e6ef8ad]" started-at="2024-04-22T02:06:45 IST" name="basictest" finished-at="2024-04-22T02:06:45 IST" duration-ms="137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basictest -->
+      </class> <!-- com.rest.TestResponseStuff2 -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
